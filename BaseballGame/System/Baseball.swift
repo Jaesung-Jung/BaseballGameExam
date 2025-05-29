@@ -8,7 +8,7 @@
 struct Baseball {
   private let interface: UserInterface
   private let game: Game
-  private var records: [Record] = []
+  private var records: [Record]
 
   init(interface: UserInterface, game: Game, records: [Record] = []) {
     self.interface = interface

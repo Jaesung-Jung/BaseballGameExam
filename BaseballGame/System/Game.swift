@@ -9,7 +9,7 @@ struct Game {
   let start: () -> Int
 
   static func `default`(interface: UserInterface) -> Game {
-    return Game {
+    Game {
       let rule = Rule()
       let answer = (1...9).shuffled().prefix(3)
       var tryCount = 0
