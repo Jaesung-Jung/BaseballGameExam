@@ -39,7 +39,6 @@ struct UserInterface {
           let uniquedNumbers = text
             .map(String.init)
             .compactMap(Int.init)
-            .filter { $0 > 0 }
             .uniqued()
           let numbers = Array(uniquedNumbers)
           return numbers.count >= 3 ? numbers : nil
